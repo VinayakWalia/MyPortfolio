@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vinayak Walia | Commercial Pilot, A320 Type Rated</title>
+<meta name="description" content="CPL holder with 200 flying hours, instrument rating and A320 type rating.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg id="bgPath" class="sky" aria-hidden="true"></svg>
+<svg id="fgPath" class="sky top" aria-hidden="true"><g id="plane"><path d="M20 2c2 0 3 4 3 10v24l3 8-6-2-6 2 3-8V12c0-6 1-10 3-10zM17 18L2 28v3l15-4zM23 18l15 10v3l-15-4zM17 38l-7 4v2l7-2zM23 38l7 4v2l-7-2z"/></g></svg>
+
+<header class="nav">
+  <a href="#top" class="logo">Vinayak Walia</a>
+  <nav>
+    <a href="#about">Profile</a><a href="#logbook">Logbook</a><a href="#licences">Licences</a>
+    <a href="#aircraft">Aircraft</a><a href="#education">Education</a><a href="#contact" class="pill">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div>
+    <p class="sub">Commercial Pilot Licence holder, A320 type rated</p>
+    <h1>Vinayak<br>Walia</h1>
+    <p class="lead">Seeking a career as a pilot in the field of aviation that will challenge and utilise my experience, education and acquired skills, while providing opportunities for personal and professional growth most importantly keeping the company's interest at a top priority.</p>
+    <div class="cta">
+      <a class="btn solid" href="#contact">Get in touch</a>
+    </div>
+  </div>
+  <figure class="photo" id="photo">
+    <img src="vinayak.jpg" alt="">
+  </figure>
+</section>
+
+<section class="stats" aria-label="Key numbers">
+  <div><b data-count="200">0</b><span>Total flying hours</span></div>
+  <div><b data-count="106">0</b><span>PIC hours (106:20)</span></div>
+  <div><b data-count="84">0</b><span>Simulator hours</span></div>
+  <div><b data-count="64">0</b><span>A320 type rating hours</span></div>
+</section>
+
+<section id="about" class="block">
+  <h2>Profile</h2>
+  <div class="two">
+    <div class="glass">
+      <h3>Personal details</h3>
+      <dl class="dl">
+        <dt>Date of birth</dt><dd>21 March 2002</dd>
+        <dt>Nationality</dt><dd>Indian</dd>
+        <dt>Gender</dt><dd>Male</dd>
+        <dt>Marital status</dt><dd>Single</dd>
+        <dt>Based in</dt><dd>Jagadhri, Haryana</dd>
+        <dt>Languages</dt><dd>English, Hindi</dd>
+      </dl>
+    </div>
+    <div class="glass">
+      <h3>Skills</h3><div class="chips" id="skills"></div>
+      <h3 class="gap">Interests</h3><div class="chips" id="interests"></div>
+    </div>
+  </div>
+</section>
+
+<section id="logbook" class="block">
+  <h2>Flying logbook</h2>
+  <p class="intro">Switch between actual and simulator time, and tap a row for the schools and details.</p>
+  <div class="seg" id="seg" role="group" aria-label="Hours type"></div>
+  <div id="log"></div>
+</section>
+
+<section id="licences" class="block">
+  <h2>Licences and ratings</h2>
+  <div class="grid" id="lic"></div>
+</section>
+
+<section id="aircraft" class="block">
+  <h2>Aircraft flown</h2>
+  <div class="tabs" id="tabs" role="tablist"></div>
+  <div class="glass ac" id="ac" role="tabpanel"></div>
+</section>
+
+<section id="education" class="block">
+  <h2>Education</h2>
+  <ul class="edu">
+    <li><b>2018</b><span>10th, S.D. Public School (CBSE)</span></li>
+    <li><b>2020</b><span>12th, S.D. Public School (CBSE)</span></li>
+    <li><b>2025</b><span>BBA, Chandigarh University</span></li>
+  </ul>
+</section>
+
+<section id="contact" class="block contact">
+  <h2>Ready for departure</h2>
+  <div class="cta">
+    <a class="btn solid" href="mailto:Vinayakwalia777@gmail.com">Email Vinayak</a>
+    <button class="btn" id="copy" type="button">Copy email</button>
+    <a class="btn" href="tel:+917988769917">Call +91 79887 69917</a>
+  </div>
+</section>
+</main>
+<footer>Vinayak Walia</footer>
+<div class="hud" aria-hidden="true">Flight progress <b id="pct">0%</b></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
